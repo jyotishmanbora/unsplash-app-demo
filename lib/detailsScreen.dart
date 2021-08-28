@@ -141,18 +141,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                               tag: widget.fNameTag,
                               child: Text(
                                 widget.firstName,
-                                style: poppinsText.copyWith(
-                                  fontSize: 35.0,
-                                ),
+                                style: poppinsStyle(context, 35.0),
                               ),
                             ),
                             Hero(
                               tag: widget.lNameTag,
                               child: Text(
                                 widget.lastName,
-                                style: poppinsText.copyWith(
-                                  fontSize: 35.0,
-                                ),
+                                style: poppinsStyle(context, 35.0),
                               ),
                             ),
                             AnimatedBuilder(
@@ -337,9 +333,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                             const EdgeInsets.only(right: 35.0),
                                         child: Text(
                                           'Photos',
-                                          style: poppinsText.copyWith(
-                                              fontSize: 23.0,
-                                              color: Color(0xff000000)),
+                                          style: poppinsStyle(context, 23.0)
+                                              .copyWith(
+                                                  color: Color(0xff000000)),
                                         ),
                                       ),
                                       Padding(
@@ -347,9 +343,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                             const EdgeInsets.only(right: 35.0),
                                         child: Text(
                                           'Likes',
-                                          style: poppinsText.copyWith(
-                                              fontSize: 17.0,
-                                              color: Color(0xffBEBFBB)),
+                                          style: poppinsStyle(context, 17.0)
+                                              .copyWith(
+                                                  color: Color(0xffBEBFBB)),
                                         ),
                                       ),
                                       Padding(
@@ -357,9 +353,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                             const EdgeInsets.only(right: 35.0),
                                         child: Text(
                                           'Collection',
-                                          style: poppinsText.copyWith(
-                                              fontSize: 17.0,
-                                              color: Color(0xffBEBFBB)),
+                                          style: poppinsStyle(context, 17.0)
+                                              .copyWith(
+                                                  color: Color(0xffBEBFBB)),
                                         ),
                                       ),
                                     ],
