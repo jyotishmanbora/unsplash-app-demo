@@ -1,4 +1,4 @@
-# app
+# unsplash-demo-app
 
 A new Flutter project.
 
